@@ -1,6 +1,17 @@
+$light-gray: #f8f8f8;
+$black-text: #29292e;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  background: $light-gray;
+  color: $black-text;
+}
+
+body, input, button, textarea {
+  font: 400 1rem 'Roboto', sans-serif;
+}
