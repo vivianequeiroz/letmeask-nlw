@@ -1,0 +1,33 @@
+@import "./global.scss";
+
+.button {
+  margin-top: 4rem;
+  height: 3.125rem;
+  border-radius: .5rem;
+  font-weight: 500;
+  background: $light-purple;
+  color: $white;
+  padding: 0 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  border: 0;
+
+  transition: filter .2s;
+
+  img {
+    margin-right: .5rem;
+  }
+
+  &:not(:disabled):hover {
+    filter: brightness(0.9);
+  }
+
+  &:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+  }
+}

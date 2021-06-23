@@ -3,6 +3,7 @@ import logoImg from './assets/images/logo.svg';
 import googleIconImg from './assets/images/google-icon.svg';
 
 import '../styles/auth.scss';
+import { Button } from '../components/Button';
 
 export function Home() {
   return (
@@ -15,7 +16,7 @@ export function Home() {
       <main>
         <div className="main-content">
           <img src={logoImg} alt="Letmeask logo"/>
-          <button>
+          <button className="create-room">
             <img src={googleIconImg} alt="Logo da Google" />
             Crie sua sala com a Google
           </button>
@@ -25,9 +26,9 @@ export function Home() {
             type=""
             placeholder="Digite o código da sala"
           />
-          <button type="submit"> 
+          <Button type="submit"> 
             Entrar na sala
-          </button>
+          </Button>
         </form>
       </div>
       </main>

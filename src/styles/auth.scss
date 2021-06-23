@@ -77,6 +77,32 @@
     }
   }
 
+  .create-room {
+    margin-top: 4rem;
+    height: 3.125rem;
+    border-radius: 8px;
+    font-weight: 500;
+    background-color: $middle-red;
+    color: $white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+    border: 0;
+
+    transition: filter .2s;
+
+    img {
+      margin-right: .5rem;
+    }
+
+    &:hover {
+      filter: brightness(0.90);
+    }
+  }
+
   .separator {
     font-size: .875rem;
     color: $middle-gray;
