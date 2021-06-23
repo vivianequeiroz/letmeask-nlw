@@ -1,4 +1,4 @@
-@import './global.scss';
+@import "./global.scss";
 
 #page-auth {
   display: flex;
@@ -7,7 +7,7 @@
 
   aside {
     flex: 7;
-    
+
     background: $light-purple;
     color: $white;
 
@@ -22,12 +22,12 @@
     }
 
     strong {
-      font: 700 2.25rem 'Poppins', sans-serif;
+      font: 700 2.25rem "Poppins", sans-serif;
       line-height: 2.625rem;
       margin-top: 1rem;
     }
 
-    p{
+    p {
       font-size: 1.5rem;
       line-height: 2rem;
       margin-top: 1rem;
@@ -43,6 +43,66 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    flex-direction: column;
   }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 20rem;
+    align-items: strech;
+    text-align: center;
+  
+    > img {
+      align-self: center;
+    }
+
+    form {
+      input {
+        height: 3.125rem;
+        border-radius: .5rem;
+        padding: 0 1rem;
+        background: $white;
+        border: .0625rem solid #a8a8b3;
+      }
+
+      button {
+        margin-top: 1rem;
+      }
+
+      button, input {
+        width: 100%;
+      }
+    }
+  }
+
+  .separator {
+    font-size: .875rem;
+    color: $middle-gray;
+
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+
+    &::before, 
+    &::after {
+      content: '';
+      flex: 1;
+      height: .0625rem;
+      background-color: $middle-gray;
+    }
+
+    &::before {
+      margin-right: 1rem;
+    }
+
+    &::after {
+      margin-left: 1rem;
+    }
+  }
+
+
 }
+
+

@@ -13,16 +13,13 @@ export function Home() {
         <p>Tire as dúvidas da sua audiência em tempo real</p>
       </aside>
       <main>
-        <div>
+        <div className="main-content">
           <img src={logoImg} alt="Letmeask logo"/>
-        </div>
-        <button>
-          <img src={googleIconImg} alt="Logo da Google" />
-          Crie sua sala com a Google
-        </button>
-        <div>
-          <p>ou entre em um sala</p>
-        </div>
+          <button>
+            <img src={googleIconImg} alt="Logo da Google" />
+            Crie sua sala com a Google
+          </button>
+        <div className="separator">ou entre em um sala</div>
         <form action="">
           <input 
             type=""
@@ -32,6 +29,7 @@ export function Home() {
             Entrar na sala
           </button>
         </form>
+      </div>
       </main>
     </div>
   )
